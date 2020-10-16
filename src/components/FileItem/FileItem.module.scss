@@ -1,0 +1,60 @@
+.file {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 14px;
+  padding-right: 15px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+
+  border-bottom: 2px solid #bfbfbf;
+  background-color: #ffffff;
+}
+
+.name {
+  width: 250px;
+
+  font-size: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.time {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.fileIcon {
+  &::before {
+    position: relative;
+    top: 5px;
+
+    display: inline-block;
+
+    content: '';
+    background-image: url('../../images/fileIcon.svg');
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+
+.folderIcon {
+  &::before {
+    position: relative;
+    top: 5px;
+
+    display: inline-block;
+
+    content: '';
+    background-image: url('../../images/folderIcon.svg');
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+}
